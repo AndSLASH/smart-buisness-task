@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# 🧑‍💻 User Management Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a test assignment for the **Junior Frontend Developer** position.
 
-Currently, two official plugins are available:
+## 🔍 Task Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal was to build a user management table that:
 
-## Expanding the ESLint configuration
+- Fetches data from a mock API (JSONPlaceholder)
+- Displays users in a table (name, username, email, phone)
+- Allows real-time filtering by all table fields
+- Uses Redux Toolkit for state management
+- Applies strict TypeScript typing
+- Has a clean, user-friendly UI styled with Bulma CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🌐 [Live App](https://your-deployment-link.vercel.app)  
+_(Replace this link with your actual deployment once ready)_
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧰 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React** (with Vite)
+- **Redux Toolkit**
+- **TypeScript**
+- **Bulma CSS** (for styling)
+- JSONPlaceholder API (`https://jsonplaceholder.typicode.com/users`)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+src/
+├── app/ # Redux store setup
+├── components/ # UI components (table, rows, filters)
+├── features/ # Redux slice (users)
+├── types/ # TypeScript types (User, Filters, State)
+├── utils/ # Helper functions (filter logic, phone sanitization)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧪 Features
+
+- ✅ API call using `fetch` to get users
+- ✅ Table layout with dynamic headers
+- ✅ Per-column real-time filtering
+- ✅ Phone filtering ignores formatting
+- ✅ Loading state + error handling
+- ✅ State managed via Redux Toolkit
+- ✅ Strong TypeScript usage
+- ✅ Modular, component-based structure
+
+## 📂 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/andslash/smart-buisness-task.git
+cd smart-buisness-task
+npm install
+npm run dev
+
 ```
