@@ -1,1 +1,1 @@
-export const getOnlyDigits = (str: string): string => str.replace(/\D/g, '')
+export const getOnlyDigits = (str: string): string => str.replace(/\D/g, "");

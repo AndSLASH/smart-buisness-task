@@ -15,7 +15,7 @@ The goal was to build a user management table that:
 
 ## 🚀 Live Demo
 
-🌐 [Live App](https://andslash.github.io/smart-buisness-task/)  
+🌐 [Live App](https://andslash.github.io/smart-buisness-task/)
 
 ## 🧰 Tech Stack
 
