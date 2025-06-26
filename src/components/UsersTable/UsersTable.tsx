@@ -46,7 +46,12 @@ export const UsersTable: React.FC = () => {
 				<thead>
 					<tr>
 						{columns.map(col => (
-							<th key={col.key}>{col.label}</th>
+							<th
+								key={col.key}
+								className='subtitle is-4 has-text-centered has-text-info has-background-info-dark'
+							>
+								{col.label}
+							</th>
 						))}
 					</tr>
 					<FiltersRow filters={filters} onChange={handleFilterChange} />

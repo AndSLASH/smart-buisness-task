@@ -15,8 +15,7 @@ The goal was to build a user management table that:
 
 ## 🚀 Live Demo
 
-🌐 [Live App](https://your-deployment-link.vercel.app)  
-_(Replace this link with your actual deployment once ready)_
+🌐 [Live App](https://andslash.github.io/smart-buisness-task/)  
 
 ## 🧰 Tech Stack
 

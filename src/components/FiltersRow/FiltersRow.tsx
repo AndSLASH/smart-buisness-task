@@ -1,7 +1,6 @@
 import React from 'react'
 import type { UsersState } from '../../types'
 
-
 type FilterKey = keyof UsersState['filters']
 
 interface FiltersRowProps {
@@ -18,9 +17,9 @@ export const FiltersRow: React.FC<FiltersRowProps> = ({
 	return (
 		<tr>
 			{columns.map(key => (
-				<th key={key}>
+				<th key={key} className='has-background-info-dark'>
 					<input
-						className='input is-small'
+						className='input is-medium has-text-dark is-info'
 						type='text'
 						placeholder={`Search ${key}`}
 						value={filters[key]}
